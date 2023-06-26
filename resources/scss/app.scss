@@ -1,0 +1,80 @@
+@import '~bootstrap/scss/bootstrap';
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: white
+}
+
+.vf-container {
+    width: calc(100% - 180px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.vf-item {
+    margin-top: 5px;
+    margin-left: 15px;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+nav {
+    height: 70px;
+}
+
+aside {
+    width: 180px;
+    height: calc(100vh - 70px);
+    background-color: black;
+    float: left;
+    ul{
+        padding-top: 10px;
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+    }
+}
+
+.vf-main {
+    width: calc(100% - 180px);
+    height: calc(100vh - 80px);
+    overflow: auto;
+    padding: 5rem 10rem;
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    button {
+        margin: 2px;
+    }
+}
+
+.index-main {
+    width: calc(100% - 180px);
+    height: calc(100vh - 80px);
+    overflow: auto;
+    padding: 5rem 10rem;
+    button {
+        display: inline-block;
+        margin: 2px;
+        a {
+            color: white;
+        }
+    }
+}
+
