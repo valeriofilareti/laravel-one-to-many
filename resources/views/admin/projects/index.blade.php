@@ -15,6 +15,7 @@
                 <th scope="col">#</th>
                 <th scope="col">Name</th>
                 <th scope="col">Description</th>
+                <th scope="col">Category</th>
                 <th style="min-width: 130px" scope="col">Date</th>
                 <th scope="col">Actions</th>
             </tr>
@@ -26,6 +27,7 @@
                     <th scope="row">{{$project->id}}</th>
                     <td>{{$project->name}}</td>
                     <td>{{$project->description}}</td>
+                    <td>{{$project->category->name}}</td>
                     <td>{{$project->creation_date}}</td>
                     <td>
                         <div class="btn d-flex">
